@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily UI Prompt #2</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- make a grid container w 6 columns and 13 rows -->
+     <div id="checkout-container">
+        <h1>You're almost done!</h1>
+        <p class="own-row">Provide your cerdit card information to complete your purchase</p>
+        <p id="warning-message" class="own-row">PLEASE DO NOT ENTER ANY REAL CREDIT CARD INFO. THIS WAS MADE FOR WEB DESIGN PRACTICE PURPOSES ONLY.</p>
+
+        <p class="span-2">Payment Method</p>
+        <div id="flex-cont-1" class="span-4">
+            <img src="./assets/images/mastercard.png">
+            <img src="./assets/images/visa.png">
+            <img src="./assets/images/paypal.png">
+        </div>
+            
+        <p class="span-6">Card number</p>
+        <input class="span-6" type="text" placeholder="1111 2222 3333 4444">
+
+        <p class="span-6">Cardholder's name</p>
+        <input class="span-6" type="text" placeholder="John Doe">
+
+        <p class="span-3">Expiration Date</p>
+        <p class="span-3">CVV</p>
+        <input class="span-3" type="text" placeholder="00/00/0000">
+        <input class="span-3" type="text" placeholder="123">
+
+        <p id="check-box" class="span-6">checkbox and save information for future payments</p>
+        <button id="check-out" class="span-6">checkout button</button>
+    </div>
+     
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
